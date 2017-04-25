@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JavaScript</title>
+	</head>
+
+<body>
+
+<h1> Javascript varibles</h1>
+<p id="demo"></p>
+
+</body>
+</html>
+<script>
+var x=10; //Know x
+function squareSum(a,b){
+//Know x, a, b
+console.log("x:" + x);
+console.log("a:" + a);
+console.log("b:" + b);
+function square(c){
+//Know x, a, b, c
+console.log("x:" + x);
+console.log("a:" + a);
+console.log("b:" + b);
+console.log("c:" + c);
+return c*c;
+}
+//Know x, a, b
+return square(a) + square(b);
+}
+//Know x only
+squareSum(2,6);
+</script>
